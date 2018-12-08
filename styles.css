@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700');
+
+#about {
+    opacity: 0;
+    visibility: hidden;
+}
+
+html {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #3d464d;
+    font-size: 1em;
+}
+
+h1,
+h3 {
+    line-height: 1em;
+    text-rendering: optimizelegibility;
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 355px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 310px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: scroll;
+
+    box-shadow: inset 0 0 100px 10px rgba(0, 0, 0, .08);
+    -webkit-box-shadow: inset 0 0 100px 10px rgba(0, 0, 0, .08);
+    -moz-box-shadow: inset 0 0 100px 10px rgba(0, 0, 0, .08);
+    -o-box-shadow: inset 0 0 100px 10px rgba(0, 0, 0, .08);
+}
+
+.av {
+    margin: 2em auto;
+    width: 14em;
+    height: 14em;
+    text-align: center;
+}
+
+.av .profile {
+    background: url('img/me.png') no-repeat;
+    background-size: 100%;
+    height: 14em;
+    width: 14em;
+    display: inline-block;
+}
+
+.headline {
+    text-align: center;
+}
+
+.headline h1 {
+    font-size: 4em;
+    color: #3d464d;
+    margin: 0;
+    font-weight: 500;
+}
+
+.headline h3 {
+    margin: 10px 0 0 0;
+    font-size: 2em;
+    font-weight: 100;
+    opacity: .6;
+}
+
+.akron {
+    color: #00285e;
+}
+
+.main-nav {
+    margin: 2em auto 0 auto;
+    text-align: center;
+    font-weight: 300;
+}
+
+.main-nav>ul {
+    padding: 0;
+}
+
+.main-nav>ul>li {
+    display: inline-block;
+    vertical-align: middle;
+
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+.main-nav>ul>li:first-child {
+    margin-left: 0;
+}
+
+.main-nav>ul>li:hover {
+    margin-top: -10px;
+    font-weight: 500;
+}
+
+.main-nav>ul>li>a {
+    padding: 0;
+    margin-top: -32px;
+    text-decoration: none;
+    color: #3d464d;
+}
+
+.main-nav li.abt {
+    width: 3em;
+}
+
+.main-nav li.git {
+    width: 4em;
+}
+
+.main-nav li.exp {
+    width: 14em;
+}
+
+.main-nav li.so {
+    width: 7em;
+}
+
+.main-nav li.pt {
+    width: 4em;
+}
+
+.main-nav li.res {
+    width: 4em;
+}
+
+.about {
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+#about {
+    opacity: 0;
+    visibility: hidden;
+    padding: 0 3em;
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#about:target {
+    opacity: .9;
+    visibility: visible;
+}
+
+.sm-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sm-container.icon-links {
+    height: 2em;
+    font-size: 18px;
+}
+
+.sm-icon {
+    background-color: #3d464d;
+    height: 2em;
+    width: 2em;
+    border-radius: 2em;
+    display: inline-block;
+
+    -webkit-transition: opacity .1s ease;
+    -moz-transition: opacity .1s ease;
+    -o-transition: opacity .1s ease;
+    transition: opacity .1s ease;
+}
+
+.sm-icon:hover {
+    opacity: .4;
+}
+
+.sm-icon img {
+    display: block;
+    margin: .3em auto;
+}
+
+p.github-link {
+    margin: 1em;
+    font-size: .7em;
+    text-decoration: none;
+    color: #3d464d;
+}
+
+p.github-link a {
+    text-decoration: none;
+    color: #3d464d;
+}
+
+p.github-link a:hover {
+    opacity: .5;
+}
